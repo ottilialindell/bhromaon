@@ -356,6 +356,10 @@ p {
   background: #19224b;
 }
 
+.explore-btn {
+  margin-bottom: 20px;
+}
+
 .container-photo {
   display: flex;
   flex-direction: column;
