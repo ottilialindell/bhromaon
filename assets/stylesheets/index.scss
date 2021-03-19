@@ -8,10 +8,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    background-color: $white;
+    overflow-x: hidden;
     flex-direction: column;
 }
 
 .main { 
+    max-width: 1773px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -96,31 +100,36 @@ p {
     align-items: center;
     flex-direction: row;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 690px) {
         flex-direction: column;
-    }
-    @media screen and (max-width: 600px) {
-        flex-direction: column;
-        width: 400px;
     }
 
     @media screen and (max-width: 460px) {
         flex-direction: column;
         width: 300px;
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 360px) {
         flex-direction: column;
         width: 250px;
     }
 }
 
 .text {
-    font-size: 17px;
-    text-align: center;
     width: 503px;
     height: 63px;
+    text-align: center;
     background: #f1f1f1;
     border: none;
+
+    @media screen and (max-width: 600px) {
+        box-sizing: border-box;
+        margin: 0 20px 20px 20px;  
+    }
+
+    @media screen and (max-width: 360px) {
+        width: 250px;
+    }
+
 }
 
 ::placeholder {
@@ -134,6 +143,15 @@ p {
     text-align: center;
     letter-spacing: 2.8px;
     color: #999999;
+
+    @media screen and (max-width: 600px) {
+        box-sizing: border-box;
+        margin: 0 20px 20px 20px;  
+    }
+    @media screen and (max-width: 360px) {
+        width: 250px;
+        font-size: 10px;
+    }
 }
 
 .search-button {
@@ -188,22 +206,37 @@ p {
     width: 100%;
     box-sizing: border-box;
     background-color: #5474FD;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-container {
+    max-width: 1500px;
     width: 100%;
-    max-height: 83px;
+    height: 83px;
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 320px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 310px;
+        width: 100%;
+        height: 100px;
+    }
 }
 
 .nav-left {
-    width: 100%;
-    max-height: 83px;
     box-sizing: border-box;
-    margin: 50px;
+    margin-left: 50px;
+    padding-left: 50px;
 
+    @media screen and (max-width: 600px) {
+        margin-left: 10px;
+        padding-left: 0px;
+        margin-top: 10px;
+    }
 
     >h3 {
         font-family: $main-font;
@@ -217,10 +250,12 @@ p {
 }
 
 .nav-right {
-    width: 100%;
-    max-height: 83px;
     box-sizing: border-box;
-    margin: 20px;
+    margin-right: 50px;
+
+    @media screen and (max-width: 600px) {
+        margin-right: 10px;
+    }
 }
 
 .nav-ul {
@@ -228,6 +263,12 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 320px) {
+        flex-wrap: wrap;
+        max-width: 200px;
+        width: 100%;
+    }
 }
 
 .nav-item {
@@ -244,6 +285,11 @@ p {
     &:hover {
         color: $hover;
     }
+
+    @media screen and (max-width: 600px) {
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
 }
 
 .second-image {
@@ -258,13 +304,16 @@ p {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    flex-wrap: wrap;
 }
 
 .container-text {
     box-sizing: border-box;
     display: flex;
     max-width: 540px;
+    width: 100%;
     min-height: 342px;
+    margin-top: 20px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
@@ -274,6 +323,14 @@ p {
         font-family: $secondary-font;
         color: $white;
         font-size: 36px;
+    }
+
+    @media screen and (max-width: 700px) {
+        margin: 40px 10px 20px 10px;
+
+        >h3 {
+            font-size: 26px; 
+        }
     }
 }
 
@@ -303,11 +360,13 @@ p {
     @extend %button;
 }
 
+
 .container-photo {
     display: flex;
     flex-direction: column;
     max-height: 450px;
-    min-width: 500px;
+    width: 500px;
+    width: 100%;
 }
 
 .house {
@@ -359,10 +418,19 @@ p {
 }
 
 .box {
-    width: 320px;
+    width: 150px;
+
+    @media screen and (max-width: 800px) {
+        width: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 }
  
 .spain-box{
+    box-sizing:border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -414,6 +482,14 @@ p {
 
 .box2 {
     width: 898px;
+
+    @media screen and (max-width: 800px) {
+        width: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 }
 
 .fifth-image {
@@ -434,6 +510,14 @@ p {
         font-family: $secondary-font;
         color: $white;
         font-size: 36px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 26px;
+        }
     }
 }
 
@@ -458,6 +542,12 @@ p {
     flex-direction: column;
     justify-content: center;
 
+    @media screen and (max-width: 400px) {
+        width: 300px;
+        height: 300px;
+    }
+
+
     >h3 {
         font-family: $main-font;
         font-style: normal;
@@ -470,6 +560,7 @@ p {
 }
 
 .footer {
+    max-width: 1773px;
     width: 100%;
     background: #232323;
     height: 271px;
