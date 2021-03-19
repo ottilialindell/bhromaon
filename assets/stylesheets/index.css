@@ -8,14 +8,21 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-wrap: wrap;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  color: #E8E8E8;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .first-image {
   background-image: url(/assets/images/image-1.png);
   width: 100%;
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +36,7 @@ body {
 .container-search {
   width: 100%;
   max-width: 653px;
-  min-height: 700px;
+  min-height: 500px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -129,7 +136,6 @@ body {
   width: 153px;
   height: 65px;
   border: none;
-  cursor: pointer;
   background: #5474FD;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
@@ -145,6 +151,7 @@ body {
 .search-button:hover {
   background: #19224b;
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .fa-search {
@@ -153,7 +160,10 @@ body {
 
 .scroll {
   display: flex;
+  justify-content: flex-start;
   text-align: center;
+  min-height: 100px;
+  margin-bottom: 50px;
 }
 .scroll > a {
   text-decoration: none;
@@ -176,18 +186,17 @@ body {
 
 .nav-container {
   width: 100%;
-  min-height: 83px;
+  max-height: 83px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin-left: 50px;
 }
 
 .nav-left {
   width: 100%;
   max-height: 83px;
   box-sizing: border-box;
-  margin: 20px;
+  margin: 50px;
 }
 .nav-left > h3 {
   font-family: "Josefin Sans", sans-serif;
@@ -197,6 +206,244 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 26px;
+}
+
+.nav-right {
+  width: 100%;
+  max-height: 83px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.nav-ul {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.nav-item:hover {
+  color: #19224b;
+}
+
+.second-image {
+  background-image: url(/assets/images/image-2.png);
+  width: 100%;
+  min-height: 685px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.container-text {
+  box-sizing: border-box;
+  display: flex;
+  max-width: 540px;
+  min-height: 342px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.container-text > h3 {
+  font-family: "Aleo", serif;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.spain-btn, .explore-btn {
+  width: 228px;
+  height: 63px;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background: linear-gradient(45deg, #496BFE 35%, #5474FD 35%);
+  color: #ffffff;
+}
+.spain-btn:hover, .explore-btn:hover {
+  background: #19224b;
+}
+
+.container-photo {
+  display: flex;
+  flex-direction: column;
+  max-height: 450px;
+  min-width: 500px;
+}
+
+.house {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .house {
+    width: 100%;
+  }
+}
+.mountains {
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+@media screen and (max-width: 400px) {
+  .mountains {
+    width: 100%;
+  }
+}
+.black {
+  height: 340px;
+  width: 100%;
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-image {
+  background-image: url(/assets/images/image-3.png);
+  width: 100%;
+  min-height: 685px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.box {
+  width: 320px;
+}
+
+.spain-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  max-width: 540px;
+  min-height: 371px;
+  background: rgba(35, 35, 35, 0.9);
+  mix-blend-mode: normal;
+  padding: 30px;
+}
+.spain-box > h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  color: #E8E8E8;
+}
+.spain-box > h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.fourth-image {
+  background-image: url(/assets/images/image-4.png);
+  width: 100%;
+  min-height: 685px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.box2 {
+  width: 898px;
+}
+
+.fifth-image {
+  background-image: url(/assets/images/image-5.png);
+  width: 100%;
+  min-height: 685px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.fifth-image > h3 {
+  font-family: "Aleo", serif;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.fas.fa-quote-left {
+  font-size: 30px;
+  color: #5474FD;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fifth {
+  background: #333333;
+  max-width: 668px;
+  height: 242px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fifth > h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FEFEFE;
 }
 
 /*# sourceMappingURL=index.css.map */
