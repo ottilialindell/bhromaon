@@ -2,6 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .main {
@@ -444,6 +445,84 @@ p {
   line-height: 26px;
   text-transform: uppercase;
   color: #FEFEFE;
+}
+
+.footer {
+  width: 100%;
+  background: #232323;
+  height: 271px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer-slogan {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1.6px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.fab.fa-linkedin-in {
+  color: #ffffff;
+  margin-right: 20px;
+}
+.fab.fa-linkedin-in:hover {
+  color: #5474FD;
+}
+
+.fab.fa-facebook-f {
+  color: #ffffff;
+  margin-right: 20px;
+}
+.fab.fa-facebook-f:hover {
+  color: #5474FD;
+}
+
+.fab.fa-twitter {
+  color: #ffffff;
+  margin-right: 20px;
+}
+.fab.fa-twitter:hover {
+  color: #5474FD;
+}
+
+.fab.fa-youtube {
+  color: #ffffff;
+  margin-right: 20px;
+}
+.fab.fa-youtube:hover {
+  color: #5474FD;
+}
+
+.fab.fa-pinterest {
+  color: #ffffff;
+}
+.fab.fa-pinterest:hover {
+  color: #5474FD;
 }
 
 /*# sourceMappingURL=index.css.map */
